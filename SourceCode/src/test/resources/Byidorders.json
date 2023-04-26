@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "User": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "integer"
+            },
+            "Fullname": {
+              "type": "string"
+            },
+            "Email": {
+              "type": "string"
+            },
+            "Password": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ID",
+            "Fullname",
+            "Email",
+            "Password"
+          ]
+        },
+        "Product": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "integer"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "Price": {
+              "type": "integer"
+            },
+            "Ratings": {
+              "type": "integer"
+            },
+            "Categories": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description",
+            "Price",
+            "Ratings",
+            "Categories"
+          ]
+        },
+        "Quantity": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ID",
+        "User",
+        "Product",
+        "Quantity"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}
+
